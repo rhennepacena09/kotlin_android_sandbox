@@ -30,7 +30,7 @@ class FragmentA : Fragment(){
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        sharedViewModel = ViewModelProvider(activity as FragmentActivity).get(SharedViewModel::class.java)
+            sharedViewModel = ViewModelProvider(activity as FragmentActivity).get(SharedViewModel::class.java)
 
         sharedViewModel?.text?.observe(viewLifecycleOwner, Observer{
             et_input.text = Editable.Factory.getInstance().newEditable(it.toString())

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/frag_a"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/frag_a"
+        android:name="arcdes.app.navigation.FragmentA"
+        android:label="Book Search Fragment"
+        tools:layout="@layout/fragment_a">
+    </fragment>
+</navigation>
